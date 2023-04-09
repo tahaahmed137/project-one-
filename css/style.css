@@ -1,0 +1,572 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 3000px;
+    font-family: 'varela round' , sans-serif;  
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/pexels-elena-rubtsova-12301327.jpg);
+    background-size :contain;
+    position: relative;
+    z-index: 10;
+}
+.overlay {
+    position: absolute;
+    top: 0px;
+    height: 0;
+    width: 100%;
+    /* height: calc(100vh - 65px); */
+    height:100vh;
+    background-color: black;
+    opacity: 0.7;
+}
+.content {
+    width: 80%;
+    height: 200px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.content h2 {
+    font-size: 55px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.content p {
+    letter-spacing: 1.5px;
+    margin-top: -29px;
+}
+.content button {
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+}
+.content .but2 {
+    background-color: blue;
+    color: white;
+}
+.content button:hover {
+    opacity: 0.7;
+}
+.headfixed {
+    /* padding: 5px 0 ; */
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: fixed;
+}
+.headfixed .logo img {
+    width: 110px;
+    /* height: 50px; */
+    float: left;
+    margin-left: 30px;
+}
+.headfixed ul {
+    list-style: none;
+    float: right;
+    margin-right: 50px;
+}
+.headfixed ul li {
+    display: inline-block;
+    margin-left: 15px;
+    padding-bottom: 3px;
+    
+}
+.headfixed ul li a {
+    text-decoration: none;
+    color: red;
+}
+.li1 {
+    border-bottom: 2px solid blue;
+}
+.headfixed ul li:hover {
+    border-bottom: 2px solid blue;
+}
+
+/* Start Of Section Two  */
+.container {
+    width: 80%;
+    margin: auto;
+}
+.sec2-content {
+    margin-bottom: 100px ;
+    overflow: hidden;
+}
+.sec2-head {
+    text-align: center;
+    font-size: 30px;
+    margin: 100px 0;
+}
+.sec2-item {
+    position: relative;
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: 1px solid #888;
+    padding: 30px 15px;
+}
+.sec2-item2 {
+    margin: 0 5%;
+}
+.sec2-content h2 {
+    /* font-size: 25px; */
+    margin-bottom: 25px;
+}
+.sec2-content p {
+    opacity: 0.5;
+}
+.sec2-content a {
+    text-decoration: none;
+    font-size: 15px;
+    opacity: 0.8;
+}
+.sec2-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: black;
+    opacity: 0.6;
+    z-index: -1;
+
+}
+
+.sec2-item:hover::after {
+    width: 100%; 
+    height: 100%;
+    transition: 0.5s;
+}
+.sec2-item:hover h2 {
+    color: white ;
+    
+}
+.sec2-item:hover p {
+    color: white ;
+}
+   
+/* End Of Section Two  */
+/* Start Of Section Three  */
+.sec3 {
+    margin-top: 200px; 
+    background-color: #e8e8e8;
+    padding-top: 150px ;
+    padding-bottom: 150px;
+}
+.sec3-head {
+    text-align: center;
+    font-size:  30px; ;
+}
+.line {
+    width: 70px;
+    height: 3px;
+    background-color: blue; 
+    position: relative; 
+    top: -30px;
+    left: 50%;
+    transform: translate(-40%);
+} 
+.sec3-content {
+    margin-top: 100px;
+    overflow: hidden;
+   
+    
+}
+.sec3-item {
+    position: relative;
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.sec3-img {
+    width: 100%;
+}
+.sec3-img img {
+    width: 80%;
+
+}
+.sec3-item3 {
+    margin: 0 20%;
+    margin-top: 50px;
+}
+.sec3-headen {
+    opacity: 0;
+}
+.sec3-headen h2 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+    color:#6195ff ;
+    font-size: 19px;
+    z-index: 2;
+
+}
+.sec3-headen p {
+      position: absolute;
+      top: 28%; 
+      left: 50%;  
+      transform: translate(-50%);
+      color: white;
+      font-size: 20px;
+      z-index: 2;
+}
+.sec3-icon {
+    position: absolute;
+    top: 60%; 
+    left: 50%;
+    transform: translate(-50%); 
+    z-index: 2 ;
+    
+}
+.sec3-icon i {
+    background-color: #6195ff;
+    font-size: 16px;
+    padding: 4px;
+    color: white;
+    
+}
+.sec3-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    opacity: 0;
+}
+.sec3-item:hover::after {
+    opacity: 1;
+    transition: 1s;
+}
+.sec3-item:hover .sec3-headen{
+    opacity: 1;
+    transition:top  1.5s ;
+    
+}
+
+/* End  Of Section Three  */
+
+/* Star Of Section Four  */ 
+.sec4 {
+    /* height: 1000px; */
+    /* overflow: hidden; */
+}
+.sec4-content {
+    overflow: hidden;
+}
+.sec4-head {
+    text-align: center;
+    font-size: 30px;
+    margin: 100px 0;
+}
+
+.sec4-item2 {
+    margin: 0 5%;
+}
+.sec4-item {
+    position: relative;
+    float: left;
+    width: 30%;
+    border: 1px solid #a8a8a8;
+    padding: 20px 15px 20px 60px;
+    margin-top: 25px;
+}
+.sec4-item i {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    font-size: 25px;
+    color: #6195ff;
+
+}
+.sec4-item p {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #999;
+}
+.sec4-item::after {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.sec4-item:hover::after {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s; 
+    z-index: -1;
+}
+.sec4-item:hover h2 {
+    color: white;
+    z-index: 2;
+}
+
+/* End  Of Section Four  */
+
+
+/* Start Of Section Sex */
+.sec6 {
+    position: relative;
+    background-image: url(../images/company.jpg);
+    background-attachment: fixed;
+    height: 350px;
+    padding-top: 120px; 
+    margin-bottom: 0;
+    margin-top: 200px;
+    z-index: -2;
+}
+.sec6::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+.sec6-content {
+    overflow: hidden;
+
+}
+.sec6-item {
+    float: left;
+    width: 20%;
+    margin-left: 5%;
+    text-align: center;
+
+}
+.sec6-item  h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 15px;
+    
+}
+.sec6-item p {
+    color: #fff;
+    margin-top: -18px;
+}
+
+.sec6-item i {
+    color: #6195ff;
+    font-size : 2em ;
+    margin-bottom: -5px;
+}
+
+/* End Of Section Sex */
+/* Start Of Section Seven  */
+.sec7 {
+    margin-top: -30px;
+    padding-top: 150px;
+    height: 900px;
+    background-color: #e8e8e8;
+}
+.sec7-head {
+    text-align: center;
+    font-size: 25px;
+}
+.sec7-line {
+    width: 60px;
+    height: 4px;
+    background-color: #6195ff;
+    margin: auto;
+    margin-top: -20px;
+    margin-bottom: 100px;
+}
+.sec7-content {
+    overflow: hidden;
+}
+.sec7-item {
+    position: relative;
+    float: left;
+    width: 30%;
+    border: 2px solid #999;
+    text-align: center;
+    padding: 40px 20px;
+    color: #888;
+}
+.sec7-item2 {
+    margin: 0 5%;
+}
+.sec7-circule {
+    margin: 15px auto ;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #6195ff;
+    border-radius: 50%;
+    padding: 3px;
+    
+}
+.sec7-circule h2 {
+    margin-top: 5px;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+.sec7-circule h3 {
+    color: black;
+    margin-top: -45px;
+    font-size: 20px;
+}
+.sec7-item p {
+    line-height: 30px;
+    /* width: 60%; */
+    margin: auto ;
+    /* margin-bottom: 15px; */
+}
+.sec7-item button {
+    padding: 3px 15px;
+    border: none;
+    border: 2px solid #6195ff;
+    margin-top: 10px;
+}
+.sec7-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0; 
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.sec7-item:hover::after {
+    height: 100%;
+    transition: 0.5s;
+}
+.sec7-item:hover h2 {
+    color: rgb(255, 0, 0);
+    
+}
+.sec7-item:hover h3 {
+    color: red;
+}
+.sec7-item:hover .plan {
+    color: red;
+}
+/* End  Of Section Seven  */
+
+/* Start Of Section eight  */
+.sec8 {
+    position: relative;
+    height: 350px;
+    background-image: url(../images/wolfgang-hasselmann-qdBLpTGXPas-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* padding-top: 50px; */
+    /* overflow: hidden; */
+    
+    
+}
+.overlay2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+.sec8-container {
+    width: 65%;
+    margin: auto;
+}
+.sec8-content {
+    padding-top:50px  ;
+    overflow: hidden;
+}
+.sec8-item {
+    float: left;
+    width: 50%;
+    padding-right: 20px;
+    padding-top: 55px;
+    margin-bottom: 110px;
+    
+    
+
+}
+.sec8-item2 {
+    /* margin-left: 10%; */
+}
+.sec8-item img {
+    border-radius: 50%;
+    float: left;
+    
+    
+}
+.upper span {
+    display: block;
+    color: white;
+    font-size: 19px;
+    
+}
+.upper p {
+    color: #6195ff;
+    font-size: 18px;
+    
+}
+.right {
+    float: left;
+    margin-left: 20px;
+}
+.clear {
+    clear: both;
+}
+.lower p {
+    color: white;
+    line-height: 1.4;
+}
+/* .sec8::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+
+} */
+/* End Of Section eight  */
+
+
+/* Start Of footer  */
+.footer {
+    height: 300px;
+     background-color: #a8a8a8; 
+     padding-top: 70px;
+}
+.footer-content {
+    text-align: center;
+}
+.foot-img img {
+    width: 200px;
+    height: 80px;
+}
+.foot-icons i {
+    display: inline-block;
+    font-size: 40px;
+    
+}
+/* End Of footer  */
